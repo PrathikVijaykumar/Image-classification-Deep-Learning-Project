@@ -49,3 +49,8 @@
 [2024-06-30 11:02:06,852: INFO: credentials: Found credentials in shared credentials file: ~/.aws/credentials]
 [2024-06-30 11:02:19,597: INFO: data_ingestion: Downloaded data from image-dataset-mlops/kidney-image/kidney_scan_images.zip into file artifacts/data_ingestion/data.zip]
 [2024-06-30 11:02:20,085: INFO: main: >>>> stage Data Ingestion Stage has completed <<<<<]
+[2024-06-30 13:04:50,582: INFO: common: yaml file: config\config.yaml loaded successfully {'artifacts_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_URL': 's3://image-dataset-mlops/kidney-image/kidney_scan_images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}, 'prepare_base_model': {'root_dir': 'artifacts/prepare_base_model', 'base_model_path': 'artifacts/prepare_base_model/base_model.h5', 'updated_base_model_path': 'artifacts/prepare_base_model/base_model_updated.h5'}}]
+[2024-06-30 13:04:50,590: INFO: common: yaml file: params.yaml loaded successfully {'AUGMENTATION': True, 'IMAGE_SIZE': [224, 224, 3], 'BATCH_SIZE': 16, 'INCLUDE_TOP': False, 'EPOCHS': 1, 'CLASSES': 2, 'WEIGHTS': 'imagenet', 'LEARNING_RATE': 0.01}]
+[2024-06-30 13:04:50,591: INFO: common: created directory at: artifacts]
+[2024-06-30 13:04:50,591: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-30 13:05:02,064: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
