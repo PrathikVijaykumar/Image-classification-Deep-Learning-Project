@@ -162,3 +162,5 @@ cython_debug/
 artifacts/*
 
 deepimage/
+
+mlruns/
