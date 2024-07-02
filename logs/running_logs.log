@@ -679,3 +679,29 @@ x==========x]
 [2024-07-01 23:45:02,212: INFO: common: yaml file: params.yaml loaded successfully {'AUGMENTATION': True, 'IMAGE_SIZE': [224, 224, 3], 'BATCH_SIZE': 16, 'INCLUDE_TOP': False, 'EPOCHS': 5, 'CLASSES': 2, 'WEIGHTS': 'imagenet', 'LEARNING_RATE': 0.04}]
 [2024-07-01 23:45:02,212: INFO: common: created directory at: artifacts]
 [2024-07-01 23:45:02,212: INFO: common: created directory at: artifacts\training]
+[2024-07-02 00:58:31,354: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-02 00:58:31,354: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-02 00:58:36,693: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 00:58:36] "GET / HTTP/1.1" 200 -]
+[2024-07-02 00:58:36,812: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 00:58:36] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]
+[2024-07-02 00:58:36,812: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 00:58:36] "[36mGET /static/assets/img/upload_image_prompt.gif HTTP/1.1[0m" 304 -]
+[2024-07-02 01:03:09,249: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-02 01:03:09,255: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-02 01:03:14,738: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:03:14] "GET / HTTP/1.1" 200 -]
+[2024-07-02 01:03:14,857: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:03:14] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]
+[2024-07-02 01:03:14,859: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:03:14] "[36mGET /static/assets/img/upload_image_prompt.gif HTTP/1.1[0m" 304 -]
+[2024-07-02 01:03:15,437: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:03:15] "[33mGET /static/static/assets/img/user_icon.png HTTP/1.1[0m" 404 -]
+[2024-07-02 01:25:50,277: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-02 01:25:50,277: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-02 01:25:54,285: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:25:54] "GET / HTTP/1.1" 200 -]
+[2024-07-02 01:25:54,395: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:25:54] "[36mGET /static/assets/img/upload_image_prompt.gif HTTP/1.1[0m" 304 -]
+[2024-07-02 01:25:54,415: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:25:54] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]
+[2024-07-02 01:25:54,887: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 01:25:54] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]

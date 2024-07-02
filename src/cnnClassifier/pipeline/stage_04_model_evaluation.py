@@ -15,7 +15,7 @@ class EvaluationTrainingPipeline:
             evaluation = Evaluation(eval_config)
             evaluation.evaluation()
             evaluation.save_score()
-            evaluation.log_into_mlflow()
+            #evaluation.log_into_mlflow() #-- Comment this out when you trying different models, once you have decided the model, then we dont need to log the model again in mlflow
         except Exception as e:
             raise e
 

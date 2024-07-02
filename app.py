@@ -30,8 +30,8 @@ def home():
 @app.route("/train", methods=['GET','POST'])
 @cross_origin()
 def trainRoute():
-    #os.system("python main.py") ## this if you want to run pipeline without logging a model version in dvc
-    os.system("dvc repro")
+    os.system("python main.py") ## this if you want to run pipeline without logging a model version in dvc
+    #os.system("dvc repro")
     return "Training done successfully!"
 
 
