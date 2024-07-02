@@ -68,6 +68,6 @@ class Evaluation:
                 # There are other ways to use the Model Registry, which depends on the use case,
                 # please refer to the doc for more information:
                 # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model") #"VGG16Model" ,RESNET50Model
             else:
                 mlflow.keras.log_model(self.model, "model")

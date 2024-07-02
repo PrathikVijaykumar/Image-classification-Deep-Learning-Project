@@ -3,7 +3,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: s3://image-dataset-mlops/kidney-image/kidney_scan_images.zip
+  source_URL: s3://image-dataset-mlops/plant-image/plant_health_images.zip #s3://image-dataset-mlops/kidney-image/kidney_scan_images.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 

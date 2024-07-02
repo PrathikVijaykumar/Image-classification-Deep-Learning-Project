@@ -30,8 +30,8 @@ def home():
 @app.route("/train", methods=['GET','POST'])
 @cross_origin()
 def trainRoute():
-    os.system("python main.py") ## this if you want to run pipeline without logging a model version in dvc
-    #os.system("dvc repro")
+    #os.system("python main.py") ## this if you want to run pipeline without logging a model version in dvc. dvc is good when you dont want to do the entire thing of downloading data, train, the simple main.py will just do it blindly, dvc knows what has changes and only do that part (part: data ingestion, trasin, evaluate)
+    os.system("dvc repro")
     return "Training done successfully!"
 
 
@@ -47,5 +47,5 @@ def predictRoute():
 
 if __name__ == "__main__":
     clApp = ClientApp()
-    app.run(host='0.0.0.0', port=8080) #AWS port
+    app.run(host='0.0.0.0', port=8080,debug=True) #AWS port
 

@@ -5,7 +5,7 @@ stages:
       - src/cnnClassifier/pipeline/stage_01_data_ingestion.py
       - config/config.yaml
     outs:
-      - artifacts/data_ingestion/kidney_scan_images
+      - artifacts/data_ingestion/plant_health_images #plant_health_images # kidney_scan_images
 
 
   prepare_base_model:
@@ -27,7 +27,7 @@ stages:
     deps:
       - src/cnnClassifier/pipeline/stage_03_model_training.py
       - config/config.yaml
-      - artifacts/data_ingestion/kidney_scan_images
+      - artifacts/data_ingestion/plant_health_images #plant_health_images #kidney_scan_images
       - artifacts/prepare_base_model
     params:
       - IMAGE_SIZE
@@ -42,7 +42,7 @@ stages:
     deps:
       - src/cnnClassifier/pipeline/stage_04_model_evaluation.py
       - config/config.yaml
-      - artifacts/data_ingestion/kidney_scan_images
+      - artifacts/data_ingestion/plant_health_images #plant_health_images #kidney_scan_images
       - artifacts/training/model.h5
     params:
       - IMAGE_SIZE
