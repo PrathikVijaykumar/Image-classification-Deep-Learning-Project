@@ -415,3 +415,137 @@ x==========x]
 [2024-07-01 18:49:23,797: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-07-01 21:34:55,115: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-01 21:34:55,115: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-01 21:35:13,189: INFO: _internal: 127.0.0.1 - - [01/Jul/2024 21:35:13] "GET / HTTP/1.1" 200 -]
+[2024-07-01 21:36:00,792: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\vprat\desktop\portfolio\image-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-07-01 21:36:00,820: INFO: _internal: 127.0.0.1 - - [01/Jul/2024 21:36:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-07-01 21:38:09,688: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 21:38:09] "GET / HTTP/1.1" 200 -]
+[2024-07-01 21:38:14,779: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\vprat\desktop\portfolio\image-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-07-01 21:38:14,780: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 21:38:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-07-01 21:41:56,454: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-01 21:41:56,454: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-01 21:42:02,481: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 21:42:02] "GET / HTTP/1.1" 200 -]
+[2024-07-01 21:42:07,790: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\vprat\desktop\portfolio\image-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 15, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\vprat\Desktop\portfolio\Image-classification-Deep-Learning-Project\deepimage\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-07-01 21:42:07,795: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 21:42:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-07-01 22:39:37,501: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-01 22:39:37,501: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-01 22:39:41,118: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:39:41] "GET / HTTP/1.1" 200 -]
+[2024-07-01 22:39:48,365: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:39:48] "POST /predict HTTP/1.1" 200 -]
+[2024-07-01 22:42:13,179: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:42:13] "POST /predict HTTP/1.1" 200 -]
+[2024-07-01 22:42:20,152: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:42:20] "POST /predict HTTP/1.1" 200 -]
+[2024-07-01 22:42:29,602: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:42:29] "POST /predict HTTP/1.1" 200 -]
+[2024-07-01 22:44:52,715: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-01 22:44:52,715: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-01 22:44:55,134: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:44:55] "GET / HTTP/1.1" 200 -]
+[2024-07-01 22:54:56,633: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-01 22:54:56,633: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-01 22:55:01,960: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:55:01] "GET / HTTP/1.1" 200 -]
+[2024-07-01 22:55:01,999: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:55:01] "[33mGET /assets/img/upload_image_prompt.gif HTTP/1.1[0m" 404 -]
+[2024-07-01 22:55:02,001: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:55:02] "[33mGET /assets/img/user_icon.png HTTP/1.1[0m" 404 -]
+[2024-07-01 22:55:05,799: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:55:05] "[33mGET /assets/img/upload_image_prompt.gif HTTP/1.1[0m" 404 -]
+[2024-07-01 22:55:05,799: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:55:05] "[33mGET /assets/img/user_icon.png HTTP/1.1[0m" 404 -]
+[2024-07-01 22:57:39,353: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-01 22:57:39,353: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-01 22:57:48,278: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:57:48] "GET / HTTP/1.1" 200 -]
+[2024-07-01 22:57:48,472: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:57:48] "GET /static/assets/img/upload_image_prompt.gif HTTP/1.1" 200 -]
+[2024-07-01 22:57:48,487: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 22:57:48] "GET /static/assets/img/user_icon.png HTTP/1.1" 200 -]
+[2024-07-01 23:04:16,310: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.239:8080]
+[2024-07-01 23:04:16,310: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-01 23:04:21,567: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 23:04:21] "GET / HTTP/1.1" 200 -]
+[2024-07-01 23:04:21,696: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 23:04:21] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]
+[2024-07-01 23:04:21,696: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 23:04:21] "[36mGET /static/assets/img/upload_image_prompt.gif HTTP/1.1[0m" 304 -]
+[2024-07-01 23:04:30,644: INFO: _internal: 192.168.0.239 - - [01/Jul/2024 23:04:30] "POST /predict HTTP/1.1" 200 -]
