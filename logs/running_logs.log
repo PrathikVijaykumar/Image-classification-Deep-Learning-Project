@@ -377,3 +377,41 @@ x==========x]
 [2024-07-01 01:59:30,970: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-07-01 18:45:44,298: INFO: stage_01_data_ingestion: >>>> stage Data Ingestion Stage has started <<<<<]
+[2024-07-01 18:45:44,298: INFO: common: yaml file: config\config.yaml loaded successfully {'artifacts_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_URL': 's3://image-dataset-mlops/kidney-image/kidney_scan_images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}, 'prepare_base_model': {'root_dir': 'artifacts/prepare_base_model', 'base_model_path': 'artifacts/prepare_base_model/base_model.h5', 'updated_base_model_path': 'artifacts/prepare_base_model/base_model_updated.h5'}, 'training': {'root_dir': 'artifacts/training', 'trained_model_path': 'artifacts/training/model.h5'}}]
+[2024-07-01 18:45:44,306: INFO: common: yaml file: params.yaml loaded successfully {'AUGMENTATION': True, 'IMAGE_SIZE': [224, 224, 3], 'BATCH_SIZE': 16, 'INCLUDE_TOP': False, 'EPOCHS': 5, 'CLASSES': 2, 'WEIGHTS': 'imagenet', 'LEARNING_RATE': 0.04}]
+[2024-07-01 18:45:44,306: INFO: common: created directory at: artifacts]
+[2024-07-01 18:45:44,306: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-01 18:45:44,306: INFO: data_ingestion: Downloading data from s3://image-dataset-mlops/kidney-image/kidney_scan_images.zip into file artifacts/data_ingestion/data.zip]
+[2024-07-01 18:45:44,334: INFO: credentials: Found credentials in shared credentials file: ~/.aws/credentials]
+[2024-07-01 18:45:57,758: INFO: data_ingestion: Downloaded data from image-dataset-mlops/kidney-image/kidney_scan_images.zip into file artifacts/data_ingestion/data.zip]
+[2024-07-01 18:45:58,398: INFO: stage_01_data_ingestion: >>>> stage Data Ingestion Stage has completed <<<<<]
+[2024-07-01 18:46:15,397: INFO: stage_02_prepare_base_model: *******************]
+[2024-07-01 18:46:15,398: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-01 18:46:15,400: INFO: common: yaml file: config\config.yaml loaded successfully {'artifacts_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_URL': 's3://image-dataset-mlops/kidney-image/kidney_scan_images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}, 'prepare_base_model': {'root_dir': 'artifacts/prepare_base_model', 'base_model_path': 'artifacts/prepare_base_model/base_model.h5', 'updated_base_model_path': 'artifacts/prepare_base_model/base_model_updated.h5'}, 'training': {'root_dir': 'artifacts/training', 'trained_model_path': 'artifacts/training/model.h5'}}]
+[2024-07-01 18:46:15,402: INFO: common: yaml file: params.yaml loaded successfully {'AUGMENTATION': True, 'IMAGE_SIZE': [224, 224, 3], 'BATCH_SIZE': 16, 'INCLUDE_TOP': False, 'EPOCHS': 5, 'CLASSES': 2, 'WEIGHTS': 'imagenet', 'LEARNING_RATE': 0.04}]
+[2024-07-01 18:46:15,403: INFO: common: created directory at: artifacts]
+[2024-07-01 18:46:15,403: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-01 18:46:15,891: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-01 18:46:16,088: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-01 18:46:20,690: INFO: stage_03_model_training: *******************]
+[2024-07-01 18:46:20,691: INFO: stage_03_model_training: >>>>>> stage Training the model started <<<<<<]
+[2024-07-01 18:46:20,693: INFO: common: yaml file: config\config.yaml loaded successfully {'artifacts_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_URL': 's3://image-dataset-mlops/kidney-image/kidney_scan_images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}, 'prepare_base_model': {'root_dir': 'artifacts/prepare_base_model', 'base_model_path': 'artifacts/prepare_base_model/base_model.h5', 'updated_base_model_path': 'artifacts/prepare_base_model/base_model_updated.h5'}, 'training': {'root_dir': 'artifacts/training', 'trained_model_path': 'artifacts/training/model.h5'}}]
+[2024-07-01 18:46:20,695: INFO: common: yaml file: params.yaml loaded successfully {'AUGMENTATION': True, 'IMAGE_SIZE': [224, 224, 3], 'BATCH_SIZE': 16, 'INCLUDE_TOP': False, 'EPOCHS': 5, 'CLASSES': 2, 'WEIGHTS': 'imagenet', 'LEARNING_RATE': 0.04}]
+[2024-07-01 18:46:20,695: INFO: common: created directory at: artifacts]
+[2024-07-01 18:46:20,696: INFO: common: created directory at: artifacts\training]
+[2024-07-01 18:49:07,375: INFO: stage_03_model_training: >>>>>> stage Training the model completed <<<<<<
+
+x==========x]
+[2024-07-01 18:49:12,866: INFO: stage_04_model_evaluation: *******************]
+[2024-07-01 18:49:12,867: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-07-01 18:49:12,869: INFO: common: yaml file: config\config.yaml loaded successfully {'artifacts_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_URL': 's3://image-dataset-mlops/kidney-image/kidney_scan_images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}, 'prepare_base_model': {'root_dir': 'artifacts/prepare_base_model', 'base_model_path': 'artifacts/prepare_base_model/base_model.h5', 'updated_base_model_path': 'artifacts/prepare_base_model/base_model_updated.h5'}, 'training': {'root_dir': 'artifacts/training', 'trained_model_path': 'artifacts/training/model.h5'}}]
+[2024-07-01 18:49:12,871: INFO: common: yaml file: params.yaml loaded successfully {'AUGMENTATION': True, 'IMAGE_SIZE': [224, 224, 3], 'BATCH_SIZE': 16, 'INCLUDE_TOP': False, 'EPOCHS': 5, 'CLASSES': 2, 'WEIGHTS': 'imagenet', 'LEARNING_RATE': 0.04}]
+[2024-07-01 18:49:12,871: INFO: common: created directory at: artifacts]
+[2024-07-01 18:49:23,796: INFO: common: json file saved at: scores.json]
+[2024-07-01 18:49:23,797: INFO: common: json file saved at: scores.json]
+[2024-07-01 18:49:23,797: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

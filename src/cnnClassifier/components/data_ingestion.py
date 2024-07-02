@@ -4,7 +4,7 @@ import gdown
 from cnnClassifier import logger
 from cnnClassifier.utils.common import get_size
 import boto3
-from src.cnnClassifier.entity.config_entity import DataIngestionConfig
+from cnnClassifier.entity.config_entity import DataIngestionConfig
 
 def download_file_from_s3(bucket_name, s3_file_key, local_file_path):
     s3 = boto3.client('s3')
