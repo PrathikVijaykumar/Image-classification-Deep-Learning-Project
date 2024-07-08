@@ -1324,3 +1324,32 @@ x==========x]
 [2024-07-02 17:28:57,599: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 17:28:57] "POST /predict HTTP/1.1" 200 -]
 [2024-07-02 17:29:05,843: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 17:29:05] "POST /predict HTTP/1.1" 200 -]
 [2024-07-02 17:29:25,342: INFO: _internal: 192.168.0.239 - - [02/Jul/2024 17:29:25] "POST /predict HTTP/1.1" 200 -]
+[2024-07-08 00:15:25,601: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.183.23.173:8080]
+[2024-07-08 00:15:25,601: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-08 00:15:25,611: INFO: _internal:  * Restarting with stat]
+[2024-07-08 00:15:28,732: WARNING: _internal:  * Debugger is active!]
+[2024-07-08 00:15:28,754: INFO: _internal:  * Debugger PIN: 900-624-597]
+[2024-07-08 00:15:44,313: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:15:44] "GET / HTTP/1.1" 200 -]
+[2024-07-08 00:15:44,394: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:15:44] "GET /static/assets/img/upload_image_prompt.gif HTTP/1.1" 200 -]
+[2024-07-08 00:15:44,413: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:15:44] "GET /static/assets/img/user_icon.png HTTP/1.1" 200 -]
+[2024-07-08 00:15:45,413: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:15:45] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]
+[2024-07-08 00:15:48,063: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:15:48] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]
+[2024-07-08 00:34:07,501: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.183.23.173:8080]
+[2024-07-08 00:34:07,501: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-08 00:34:07,505: INFO: _internal:  * Restarting with stat]
+[2024-07-08 00:34:11,300: WARNING: _internal:  * Debugger is active!]
+[2024-07-08 00:34:11,300: INFO: _internal:  * Debugger PIN: 900-624-597]
+[2024-07-08 00:34:57,439: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:34:57] "GET / HTTP/1.1" 200 -]
+[2024-07-08 00:34:57,602: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:34:57] "[36mGET /static/assets/img/upload_image_prompt.gif HTTP/1.1[0m" 304 -]
+[2024-07-08 00:34:57,684: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:34:57] "[36mGET /static/assets/img/user_icon.png HTTP/1.1[0m" 304 -]
+[2024-07-08 00:35:18,165: INFO: _internal: 10.183.23.173 - - [08/Jul/2024 00:35:18] "POST /predict HTTP/1.1" 200 -]
+[2024-07-08 00:36:03,643: INFO: _internal:  * Detected change in 'c:\\users\\vprat\\desktop\\portfolio\\image-classification-deep-learning-project\\src\\cnnClassifier\\pipeline\\stage_04_model_evaluation.py', reloading]
+[2024-07-08 00:36:04,231: INFO: _internal:  * Restarting with stat]
+[2024-07-08 00:36:07,341: WARNING: _internal:  * Debugger is active!]
+[2024-07-08 00:36:07,341: INFO: _internal:  * Debugger PIN: 900-624-597]
