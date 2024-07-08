@@ -92,8 +92,8 @@ jobs:
       - name: Stop and remove existing container if it exists
         run: |
           if [ $(docker ps -q --filter "name=cnncls") ]; then
-            docker stop cnncls
-            docker rm cnncls
+            docker stop cnncls || true
+            docker rm cnncls || true
           fi
        
       - name: Run Docker Image to serve users
