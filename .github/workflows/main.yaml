@@ -88,7 +88,8 @@ jobs:
          
       - name: Stop and remove container if running
         run: |
-         docker ps -q --filter "name=cnncls" | grep -q . && docker stop cnncls && docker rm -fv cnncls
+         docker ps -a -q --filter "name=cnncls" | grep -q . && docker stop cnncls || true
+         docker ps -a -q --filter "name=cnncls" | grep -q . && docker rm -fv cnncls || true
       # - name: Stop and remove existing container if it exists
       #   run: |
       #     if [ $(docker ps -q --filter "name=cnncls") ]; then
